@@ -268,6 +268,7 @@ module MsgToolbox
   def sign_autograph(name, base_image_id)
     conn = Faraday.new
     conn.basic_auth(ENV['MSG_API_USER'], ENV['MSG_API_PASS'])
+    name = URI::encode(name)
     @result = conn.get "http://msg-umami-api.herokuapp.com/api/v2.0/autograph/sign/#{base_image_id}/#{name}"
     if @result.body.include? 'restricted'
       @result=400

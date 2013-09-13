@@ -4,12 +4,18 @@ require 'sinatra/reloader'
 require 'sinatra/cookies'
 require 'mongo_mapper'
 require 'json'
+require 'faraday'
+require 'xmlsimple'
+require 'open-uri'
+require 'nokogiri'
 
 require_relative 'minify_resources'
 
 class MyApp < Sinatra::Application
   register Sinatra::Reloader
-  set :protection, :except => :frame_options
+  #uncomment if site will be viewed in iframe
+  #set :protection, :except => :frame_options
+  
   enable :sessions
   # to set token:  heroku config:set SECRET_TOKEN=`openssl rand -hex 20`
   set :session_secret, ENV["SECRET_TOKEN"] || '03c9fe100fcf579cd70229898381157898423345673849e10d0c54121cc37bda6a66ec2ae3'
@@ -59,6 +65,7 @@ end
 # set the ENV vars and uncomment the following line to enable basic auth
 # require_relative 'lib/sinatra/basic_auth'
 
+require_relative 'lib/titlecase'
 require_relative 'helpers/init'
 require_relative 'models/init'
 require_relative 'routes/init'
