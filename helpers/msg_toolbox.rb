@@ -352,32 +352,32 @@ module MsgToolbox
       @response = response.body
     end
 
-    def self.shorten(urlin, campaignid)
-      @payload = {:url => urlin}
+    def self.shorten(urlin, campaignid, mdn, accountid )
+    @payload = {:url => urlin}
 
-      if mdn
-        @payload['recipientaltkey'] = mdn
-      end
-
-      if accountid
-        @payload['accountid'] = accountid
-      end
-
-      if campaignid
-        @payload['campaignid'] = campaignid
-      end
-
-      @payload['messageTemplateId']='1'
-      @payload['application'] = 'MSG'
-
-      conn = Faraday.new "https://trustapi.vibesapps.com/UrlShortener/api/shorten", :ssl => {:verify => false}
-      conn.basic_auth(ENV['SHORT_USER'], ENV['SHORT_PASS'])
-      response = conn.post do |req|
-        req.headers['Content-Type'] = 'application/json'
-        req.body = @payload.to_json
-      end
-
-      @result = response.body
+    if mdn
+      @payload['recipientaltkey'] = mdn
     end
+
+    if accountid
+      @payload['accountid'] = accountid
+    end
+
+    if campaignid
+      @payload['campaignid'] = campaignid
+    end
+
+    @payload['messageTemplateId']='1'
+    @payload['application'] = 'MSG'
+
+    conn = Faraday.new "https://trustapi.vibesapps.com/UrlShortener/api/shorten", :ssl => {:verify => false}
+    conn.basic_auth(ENV['SHORT_USER'], ENV['SHORT_PASS'])
+    response = conn.post do |req|
+      req.headers['Content-Type'] = 'application/json'
+      req.body = @payload.to_json
+    end
+
+    @result = response.body
+  end
 
 end
