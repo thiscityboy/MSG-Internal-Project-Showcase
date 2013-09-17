@@ -12,7 +12,7 @@ gem 'xml-simple'
 gem 'nokogiri'
 gem 'jsmin'
 gem 'cssmin'
-gem 'unicorn'
+gem 'passenger'
 
 group :development do
   gem "better_errors"

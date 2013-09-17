@@ -353,7 +353,6 @@ module MsgToolbox
     end
 
     def self.shorten(urlin, campaignid)
-      @url = "http://trustapi.vibesapps.com/UrlShortener/api/shorten"
       @payload = {:url => urlin}
 
       if mdn
@@ -371,10 +370,9 @@ module MsgToolbox
       @payload['messageTemplateId']='1'
       @payload['application'] = 'MSG'
 
-      conn = Faraday.new
+      conn = Faraday.new "https://trustapi.vibesapps.com/UrlShortener/api/shorten", :ssl => {:verify => false}
       conn.basic_auth(ENV['SHORT_USER'], ENV['SHORT_PASS'])
       response = conn.post do |req|
-        req.url @url
         req.headers['Content-Type'] = 'application/json'
         req.body = @payload.to_json
       end
