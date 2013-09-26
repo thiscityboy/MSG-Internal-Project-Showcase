@@ -33,6 +33,7 @@ module MsgToolbox
   #   campaignid - Catapult campaign shortener is used for (optional) 
   #   mdn - MDN shortener is used for (optional)  
   #   accountid - Account id that owns campaign above (optional) 
+  #   shortcode - shortcode for the campaign above (optional) 
   #
   # Returns:
   #   short url
