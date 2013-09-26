@@ -38,8 +38,8 @@ module MsgToolbox
   #   short url
   #
   ##
-  def shorten_url(urlin, campaignid, mdn, accountid)
-    @short_url = shorten(urlin, campaignid, mdn, accountid)
+  def shorten_url(urlin, campaignid, mdn, accountid, shortcode)
+    @short_url = shorten(urlin, campaignid, mdn, accountid, shortcode)
   end
 
   ##
