@@ -29,14 +29,17 @@ module MsgToolbox
   #
   # Parameters:
   #
-  #   long_url - URL to be shortened
+  #   long_url - URL to be shortened (required)
+  #   campaignid - Catapult campaign shortener is used for (optional) 
+  #   mdn - MDN shortener is used for (optional)  
+  #   accountid - Account id that owns campaign above (optional) 
   #
   # Returns:
   #   short url
   #
   ##
-  def shorten_url(long_url, campaign_id)
-    @short_url = shorten(long_url, campaign_id)
+  def shorten_url(urlin, campaignid, mdn, accountid)
+    @short_url = shorten(urlin, campaignid, mdn, accountid)
   end
 
   ##
@@ -83,7 +86,7 @@ module MsgToolbox
          sms_body='Sorry, no offers are available at this time'
       else
          coupon_url="http://mp.vibescm.com/p/#{mp_id}?code=#{@code}"
-        short_url = shorten(coupon_url)
+        short_url = shorten(coupon_url,nil,nil,nil)
         sms_body="For an exclusive offer click: #{short_url}?c=#{@code} Reply HELP for help, STOP to cancel-Msg&data rates may apply"
       end
       send_message(mdn, sms_body, short_code)
@@ -352,7 +355,7 @@ module MsgToolbox
       @response = response.body
     end
 
-    def self.shorten(urlin, campaignid, mdn, accountid )
+    def self.shorten(urlin, campaignid, mdn, accountid, shortcode)
     @payload = {:url => urlin}
 
     if mdn
@@ -365,6 +368,10 @@ module MsgToolbox
 
     if campaignid
       @payload['campaignid'] = campaignid
+    end
+
+    if shortcode
+      @payload['shortcode'] = shortcode
     end
 
     @payload['messageTemplateId']='1'
