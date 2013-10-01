@@ -360,15 +360,15 @@ module MsgToolbox
     @payload = {:url => urlin}
 
     if mdn
-      @payload['recipientaltkey'] = mdn
+      @payload['recipientAltKey'] = mdn
     end
 
     if accountid
-      @payload['accountid'] = accountid
+      @payload['accountId'] = accountid
     end
 
     if campaignid
-      @payload['campaignid'] = campaignid
+      @payload['campaignId'] = campaignid
     end
 
     if shortcode
