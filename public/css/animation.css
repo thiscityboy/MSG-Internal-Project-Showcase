@@ -1,0 +1,10 @@
+.home-bg {
+	animation: home-bg 5s linear;
+	-webkit-animation: home-bg x;
+}
+
+@-webkit-keyframes home-bg /* Safari and Chrome */
+{
+	from {transform: scale(1,1);}
+	to {transform: scale(1.5,1.5);}
+}

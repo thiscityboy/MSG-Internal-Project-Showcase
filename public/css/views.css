@@ -153,18 +153,18 @@
 	/* ... */
 }
 
-/* faz-iphone */
+/* cmt-iphone */
 
-#view-projekte-faz-iphone {
-	background-color: #adadad;
+#view-projekte-cmt-iphone {
+	background-color: #FC0D1B;
 	color: #fff;
 }
 
-#square-projekte-faz-iphone .content {
+#square-projekte-cmt-iphone .content {
 	margin-top: 15%;
 }
 
-#square-projekte-faz-iphone .image-box {
+#square-projekte-cmt-iphone .image-box {
 	top: 45%;
 	left: -40%;
 	width: 170%;
@@ -186,18 +186,18 @@
 	width: 110.625%;
 }
 
-/* christophorus */
+/* sauza */
 
-#view-projekte-christophorus {
-	background-color: #cbcbcb;
-	color: #000;
+#view-projekte-sauza {
+	background-color: #5799CD;
+	color: #fff;
 }
 
-#square-projekte-christophorus .content {
+#square-projekte-sauza .content {
 	margin-top: 15%;
 }
 
-#square-projekte-christophorus .image-box {
+#square-projekte-sauza .image-box {
 	top: 35%;
 	left: -50%;
 	width: 214.21875%;
@@ -215,8 +215,8 @@
 }
 
 #square-projekte-konzeptlicht .image-box {
-	top: 30%;
-	left: -5%;
+	top: 39%;
+	left: -33%;
 	width: 160%;
 }
 

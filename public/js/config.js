@@ -70,7 +70,7 @@ DW.PRELOAD_IMAGES = [
 // sitemap
 DW.MENU = [
 	{'level':1 ,'labelDe':'START', 'labelEn':'START', 'view':'home'},
-	{'level':1 ,'labelDe':'PROJEKTE', 'labelEn':'PROJECTS', 'view':'projekte-0'},
+	{'level':1 ,'labelDe':'WORK', 'labelEn':'WORK', 'view':'projekte-0'},
 	{'level':2 ,'labelDe':'FAZ.NET', 'labelEn':'FAZ.NET', 'view':'projekte-faznet'},
 	{'level':2 ,'labelDe':'F.A.Z. IPHONE-APP', 'labelEn':'F.A.Z. IPHONE-APP', 'view':'projekte-faz-iphone'},
 	{'level':2 ,'labelDe':'F.A.Z. IPAD-APP', 'labelEn':'F.A.Z. IPAD-APP', 'view':'projekte-faz-ipad'},
@@ -83,5 +83,5 @@ DW.MENU = [
 	{'level':1 ,'labelDe':'KÖPFE', 'labelEn':'ABOUT US', 'view':'koepfe-0'},
 	{'level':2 ,'labelDe':'PAUL WAGNER', 'labelEn':'PAUL WAGNER', 'view':'wagner'},
 	{'level':2 ,'labelDe':'REINHARD DASSEL', 'labelEn':'REINHARD DASSEL', 'view':'dassel'},
-	{'level':1 ,'labelDe':'KONTAKT', 'labelEn':'CONTACT', 'view':'kontakt'}
+	{'level':1 ,'labelDe':'CONTACT', 'labelEn':'CONTACT', 'view':'kontakt'}
 ];
