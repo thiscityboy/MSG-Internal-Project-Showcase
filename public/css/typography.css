@@ -5,64 +5,28 @@
 
 
 @font-face {
-	font-family: 'Code Light';
+	font-family: 'Code-Light';
 	src: url('/fonts/Code-Light.eot');
 	src: url('/fonts/Code-Light-.eot#iefix') format('embedded-opentype'),
 		 url('/fonts/Code-Light.woff') format('woff'),
 		 url('/fonts/Code-Light.ttf') format('truetype'),
 		 url('/fonts/Code-Light.svg#Code-Light') format('svg');
-	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
 }
 
+
 @font-face {
-	font-family: 'Atlas Grotesk Web';
-	src: url('../fonts/Atlas%20Grotesk%20Web-Bold.eot');
-	src: url('../fonts/Atlas%20Grotesk%20Web-Bold-.eot#iefix') format('embedded-opentype'),
-		 url('../fonts/Atlas%20Grotesk%20Web-Bold.woff') format('woff'),
-		 url('../fonts/Atlas%20Grotesk%20Web-Bold.ttf') format('truetype'),
-		 url('../fonts/Atlas%20Grotesk%20Web-Bold.svg#Atlas%20Grotesk%20Web') format('svg');
-	font-weight: 700;
+	font-family: 'Code-Bold';
+	src: url('/fonts/Code-Bold.eot');
+	src: url('/fonts/Code-Bold-.eot#iefix') format('embedded-opentype'),
+		 url('/fonts/Code-Bold.woff') format('woff'),
+		 url('/fonts/Code-Bold.ttf') format('truetype'),
+		 url('/fonts/Code-Bold.svg#Code-Bold') format('svg');
 	font-style: normal;
 	font-stretch: normal;
 }
 
-@font-face {
-	font-family: 'Atlas Grotesk Web';
-	src: url('../fonts/Atlas%20Grotesk%20Web-Black.eot');
-	src: url('../fonts/Atlas%20Grotesk%20Web-Black-.eot#iefix') format('embedded-opentype'),
-		 url('../fonts/Atlas%20Grotesk%20Web-Black.woff') format('woff'),
-		 url('../fonts/Atlas%20Grotesk%20Web-Black.ttf') format('truetype'),
-		 url('../fonts/Atlas%20Grotesk%20Web-Black.svg#Atlas%20Grotesk%20Web') format('svg');
-	font-weight: 900;
-	font-style: normal;
-	font-stretch: normal;
-}
-
-@font-face {
-	font-family: 'Atlas Typewriter Web';
-	src: url('../fonts/Atlas%20Typewriter%20Web-Regular.eot');
-	src: url('../fonts/Atlas%20Typewriter%20Web-Regular-.eot#iefix') format('embedded-opentype'),
-		 url('../fonts/Atlas%20Typewriter%20Web-Regular.woff') format('woff'),
-		 url('../fonts/Atlas%20Typewriter%20Web-Regular.ttf') format('truetype'),
-		 url('../fonts/Atlas%20Typewriter%20Web-Regular.svg#Atlas%20Typewriter%20Web') format('svg');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-}
-
-@font-face {
-	font-family: 'Atlas Typewriter Web';
-	src: url('../fonts/Atlas%20Typewriter%20Web-Black.eot');
-	src: url('../fonts/Atlas%20Typewriter%20Web-Black-.eot#iefix') format('embedded-opentype'),
-		 url('../fonts/Atlas%20Typewriter%20Web-Black.woff') format('woff'),
-		 url('../fonts/Atlas%20Typewriter%20Web-Black.ttf') format('truetype'),
-		 url('../fonts/Atlas%20Typewriter%20Web-Black.svg#Atlas%20Typewriter%20Web') format('svg');
-	font-weight: 900;
-	font-style: normal;
-	font-stretch: normal;
-}
 
 /* ---------------------------------------------------------------------- */
 
@@ -73,7 +37,7 @@ body {
 }
 
 h1 {
-	font-family:"Atlas Grotesk Web", sans-serif;
+	font-family:"Code-Light", sans-serif;
 	font-size: 4em;
 	line-height: 1em; 
 	font-weight: 900;
@@ -87,26 +51,29 @@ h2 {
 }
 
 h3 {
-	font-family: "Atlas Typewriter Web", sans-serif;
+	font-family:"Helvetica-Neue", sans-serif;
 	font-size: 1.3em; 
 	margin-bottom: 0.5em;
-	font-weight: 400;
+	font-weight: 300;
+
 }
 
 .copy-text, p, h3 {
-	font-family: "Code-Light", sans-serif;
+	font-family: "Helvetica-Neue", sans-serif;
 	font-size: 1.3333333em; 
 	line-height: 1.5em;
 }
 
+
+
 .award-text, .link-button-text {
-	font-family: "Atlas Typewriter Web", sans-serif;
+	font-family: "Helvetica-Neue", sans-serif;
 	font-size: 1em; 
 	line-height: 1.4em;
 }
 
 .typewriter, #footer, .kb-hint {
-	font-family: "Atlas Typewriter Web","Courier New", Courier, monospace;
+	font-family: "Helvetica-Neue", sans-serif;
 	font-size: 0.7em; 
 	letter-spacing: 0.2em;
 }
@@ -117,7 +84,7 @@ h3 {
 }
 
 .logo {
-	font-family: "Atlas Typewriter Web", sans-serif;
+	font-family: "Helvetica-Neue", sans-serif;
 	font-size: 1.5em; 
 	line-height: 1em;
 	font-weight: 900;
@@ -125,13 +92,12 @@ h3 {
 }
 
 .menu-item, .menu-level2-item {
-	font-family: "Atlas Typewriter Web", sans-serif;
-	font-size: 0.9em; 
-	font-weight: 400;	
+	font-family: "Code-Bold", sans-serif;
+	font-size: 1em; 
 }
 
 .menu-touch-item {
-	font-family: "Atlas Typewriter Web", sans-serif;
+	font-family: "Helvetica-Neue", sans-serif;
 	font-size: 12px; 
 	font-weight: 400;		
 }

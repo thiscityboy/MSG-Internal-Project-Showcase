@@ -153,6 +153,28 @@
 	/* ... */
 }
 
+/* faznet */
+
+#view-projekte-nfl {
+	background-image: url(/img/views/nfl-bg2.jpg);
+	background-size: cover;
+	color: #fff;
+}
+
+#square-projekte-nfl .content {
+	margin-top: 15%;
+}
+
+#square-projekte-nfl .image-box {
+	top: 40%;
+	left: -40%;
+	width: 175%;
+}
+
+#layer-projekte-nfl {
+	/* ... */
+}
+
 /* cmt-iphone */
 
 #view-projekte-cmt-iphone {
@@ -255,7 +277,7 @@
 }
 
 #square-profil-1 h2, #square-profil-2 h2, #square-profil-3 h2 {
-	font-family: "Atlas Typewriter Web", sans-serif;
+	font-family: "Helvetica-Neue", sans-serif;
 	font-weight: 900;
 	font-size: 6.5em;
 	line-height: 1.076923077em;
@@ -452,7 +474,7 @@
 }
 
 #square-kontakt h1 {
-	font-family: "Atlas Typewriter Web", sans-serif;
+	font-family: "Helvetica-Neue", sans-serif;
 	font-weight: 900;
 	font-size: 6em;
 	line-height:1em;

@@ -17,20 +17,6 @@
 // define 'namespace' DW
 var DW = DW || {};
 
-// paths
-DW.TEST_URL = "http://dev2.dasselundwagner.de";
-DW.LIVE_URL = "http://www.dasselundwagner.com";
-
-// itunes links
-DW.ITUNES_FAZ_IPHONE = "https://itunes.apple.com/de/app/f-a-z/id375948652?mt=8";
-DW.ITUNES_FAZ_IPAD = "https://itunes.apple.com/de/app/f-a-z-zeitung/id416982402?mt=8";
-DW.PORSCHE = "https://itunes.apple.com/ch/app/porsche-christophorus-magazin/id460906366?mt=8";
-
-// language 
-DW.LANGUAGE = "de"; // default
-if (location.href.indexOf("/en/") >= 0) {
-	DW.LANGUAGE = "en";
-}
 
 // size of central always visible content square
 DW.SQUARE_SIZE = 640;
@@ -72,16 +58,10 @@ DW.MENU = [
 	{'level':1 ,'labelDe':'START', 'labelEn':'START', 'view':'home'},
 	{'level':1 ,'labelDe':'WORK', 'labelEn':'WORK', 'view':'projekte-0'},
 	{'level':2 ,'labelDe':'FAZ.NET', 'labelEn':'FAZ.NET', 'view':'projekte-faznet'},
+	{'level':2 ,'labelDe':'FAZ.NET', 'labelEn':'FAZ.NET', 'view':'projekte-nfl'},
 	{'level':2 ,'labelDe':'F.A.Z. IPHONE-APP', 'labelEn':'F.A.Z. IPHONE-APP', 'view':'projekte-faz-iphone'},
 	{'level':2 ,'labelDe':'F.A.Z. IPAD-APP', 'labelEn':'F.A.Z. IPAD-APP', 'view':'projekte-faz-ipad'},
 	{'level':2 ,'labelDe':'PORSCHE IPAD-APP', 'labelEn':'PORSCHE IPAD-APP', 'view':'projekte-christophorus'},
 	{'level':2 ,'labelDe':'KONZEPTLICHT', 'labelEn':'KONZEPTLICHT', 'view':'projekte-konzeptlicht'},
-	{'level':1 ,'labelDe':'PROFIL', 'labelEn':'PROFILE', 'view':'profil-0'},
-	{'level':2 ,'labelDe':'01', 'labelEn':'01', 'view':'profil-1'},
-	{'level':2 ,'labelDe':'02', 'labelEn':'02', 'view':'profil-2'},
-	{'level':2 ,'labelDe':'03', 'labelEn':'03', 'view':'profil-3'},
-	{'level':1 ,'labelDe':'KÖPFE', 'labelEn':'ABOUT US', 'view':'koepfe-0'},
-	{'level':2 ,'labelDe':'PAUL WAGNER', 'labelEn':'PAUL WAGNER', 'view':'wagner'},
-	{'level':2 ,'labelDe':'REINHARD DASSEL', 'labelEn':'REINHARD DASSEL', 'view':'dassel'},
 	{'level':1 ,'labelDe':'CONTACT', 'labelEn':'CONTACT', 'view':'kontakt'}
 ];

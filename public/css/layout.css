@@ -144,7 +144,7 @@ a > span {
 	display: block; 
 	visibility: hidden;
 	position:absolute;
-	background-color: white;
+	background-color: rgba(255,255,255,.9);
 	/*background-image: url("../img/layouts/grid-square.gif");*/
 }
 
@@ -164,6 +164,7 @@ a > span {
 .layer .content {
 	padding: 5% 10% 5% 5%;
 	padding-top: 15.5%;
+
 }
 
 .spinner {
@@ -519,7 +520,7 @@ a > span {
 
 #menu-level2 {
 	position: absolute;
-	background: black;
+	background: rgba(0,0,0,.8);
 	border-top: 1px solid white;
 	top:44px;
 }

@@ -8,3 +8,14 @@
 	from {transform: scale(1,1);}
 	to {transform: scale(1.5,1.5);}
 }
+
+
+
+#home-type-anime {
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
