@@ -1,0 +1,507 @@
+
+/* Home ---------------------------------------------------------------------------- */
+
+#view-home {
+	background: #000;
+}
+
+#square-home .content {
+	margin-top: 15.5%;
+	margin-left: 5%;
+	width: 90%;
+	color: #fff;
+}
+
+#square-home h1 {
+}
+
+#square-home .copy-text {
+	margin-top: 10.6%;
+}
+
+/* the next button for touch devices is part of the home view */
+#btn-next-touch {
+	display: none;
+	position: absolute;
+	right: 20px;
+}
+
+/* Projekte  ---------------------------------------------------------------------------- */
+
+/* styles for all projects (css classes) */
+.view-projekte {
+	background: #000;
+	color:#fff;
+}
+
+.square-projekte .content {
+	margin-left: 5%;
+	width: 90%;
+}
+
+.square-projekte .copy-text {
+	margin-top: 10.6%;
+}
+
+.square-projekte-0 h2 {
+	font-size: 2.5em;
+	line-height: 1.3333333333em;
+}
+
+#view-projekte-0 .content {
+	text-align: right;
+}
+
+.award {
+	position: absolute;
+	background-image: url("/img/views/award_white.gif");
+	background-size: 100% 100%;
+	text-align: center;
+	width: 40%;
+	height: 10.625%;
+	padding-top: 2%;
+}
+
+.award-1 {
+	/* top:69.9%; */
+	top:69.9%;
+	left: 5%
+}
+
+.award-2 {
+	top:69.9%;
+	right: 10%
+}
+
+.award-3 {
+	top: 84.9%;
+	left: 5%;
+}
+
+.award-4 {
+	/* top: 84.9%; */
+	top: 84.9%;
+	right: 10%;
+}
+
+.kb-hint {
+	position: absolute;
+	top: 97%;
+	left: 2%;
+	letter-spacing: 0;
+}
+
+.link-button {
+	position: absolute;
+	background-image: url("/img/views/link_button_black.gif");
+	background-size: 100% 100%;
+	width: 30.3125%;
+	height: 7.8125%;
+	padding-top: 2.3%;
+	padding-left: 3.5%;
+	/* top:86.4%; */
+	top:86.4%;
+	left:55%;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+.appstore-button-de {
+	background-image: url("/img/views/appstore_button_de.png");
+	width: 29.375%;
+	height: 8.75%;
+	/* top:85.8%; */
+	top:86.4%;
+	left:55.4%;
+}
+
+.appstore-button-en {
+	background-image: url("/img/views/appstore_button_en.png");
+	width: 29.375%;
+	height: 8.75%;
+	top:86.4%;
+	left:55.4%;
+}
+
+.link-button-text {
+	color: white;
+}
+
+.square-projekte .content {
+	text-align: left;
+	margin-top: 25.5%;	
+}
+
+/* faznet */
+
+#view-projekte-faznet {
+	background-color: #d8d8d8;
+	color: #000;
+}
+
+#square-projekte-faznet .content {
+	margin-top: 15%;
+}
+
+#square-projekte-faznet .image-box {
+	top: 40%;
+	left: -40%;
+	width: 175%;
+}
+
+#layer-projekte-faznet {
+	/* ... */
+}
+
+/* faz-iphone */
+
+#view-projekte-faz-iphone {
+	background-color: #adadad;
+	color: #fff;
+}
+
+#square-projekte-faz-iphone .content {
+	margin-top: 15%;
+}
+
+#square-projekte-faz-iphone .image-box {
+	top: 45%;
+	left: -40%;
+	width: 170%;
+} 
+
+/* faz-ipad */
+
+#view-projekte-faz-ipad {
+	background-color: #898989;
+	color: #fff;
+}
+
+#square-projekte-faz-ipad .content {
+	margin-top: 15%;
+}
+#square-projekte-faz-ipad .image-box {
+	top: 35%;
+	left: -5%;
+	width: 110.625%;
+}
+
+/* christophorus */
+
+#view-projekte-christophorus {
+	background-color: #cbcbcb;
+	color: #000;
+}
+
+#square-projekte-christophorus .content {
+	margin-top: 15%;
+}
+
+#square-projekte-christophorus .image-box {
+	top: 35%;
+	left: -50%;
+	width: 214.21875%;
+}
+
+/* konzeptlicht */
+
+#view-projekte-konzeptlicht {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#square-projekte-konzeptlicht .content {
+	margin-top: 15%;
+}
+
+#square-projekte-konzeptlicht .image-box {
+	top: 30%;
+	left: -5%;
+	width: 160%;
+}
+
+/* Profil  ---------------------------------------------------------------------------- */
+
+.view-profil {
+	background: #fefefe;
+}
+
+#view-profil-0 {
+	background: #000;
+	color:#fff;
+}
+
+.square-profil .content {
+	margin-left: 5%;
+	margin-top: 15.5%;
+	width: 90%;
+}
+
+#view-profil-0 .content {
+	margin-top: 25.5%;
+	text-align: right;
+}
+
+#view-profil-0 .copy-text {
+	margin-top: 2.9em;
+}
+
+.square-profil .copy-text {
+	margin-top: 0.7em;
+}
+
+.square-profil-0 h2 {64
+	line-height: 1.3em;
+}
+
+#square-profil-1 h2, #square-profil-2 h2, #square-profil-3 h2 {
+	font-family: "Atlas Typewriter Web", sans-serif;
+	font-weight: 900;
+	font-size: 6.5em;
+	line-height: 1.076923077em;
+}
+
+
+/* Köpfe (shared styles) ---------------------------------------------------------------------------- */
+
+.media-buttons {
+	position: absolute;
+	left: 5%;
+	margin-top: 11%;
+	width:179px;
+}
+
+.media-button {
+	width:50px;          
+	margin-right: 13px;    
+	float: left;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+.media-buttons .last-child {
+	margin-right: 0;
+}
+
+.media-button img {
+	vertical-align: bottom; /* avoids extra space for <a> below image */
+}
+
+/* Köpfe 0 ---------------------------------------------------------------------------- */
+
+#view-koepfe-0 {
+	background: #000;
+	color:#fff;
+}
+
+#view-koepfe-0 .content {
+	margin-left: 5%;
+	margin-top: 30.5%;
+	width: 90%;
+	text-align: right;
+}
+
+#view-koepfe-0 .copy-text {
+	margin-top: 2.9em;
+}
+
+.square-koepfe-0 h2 {
+	line-height: 1.3em;
+}
+
+/* Dassel  ---------------------------------------------------------------------------- */
+
+
+#view-dassel {
+	background-color: #898989;
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size:auto 100%;
+}
+
+#square-dassel .content {
+	text-align: left;
+	color: #FFF;
+	margin-left: 5%;
+	width: 80%;
+	margin-top: 14.5%;
+}
+
+#square-dassel h2 {
+	font-size: 1.75em;
+	margin-bottom: 1.1em;
+	text-transform: uppercase;;
+}
+
+#square-dassel .copy-text {
+	color: #FFF;
+	line-height: 1.5em;
+	margin-top: 3.8%;
+}
+
+#layer-dassel h2 {
+	font-size: 1.75em;
+	margin-bottom: 1.1em;
+	text-transform: uppercase;
+}
+
+#layer-dassel p {
+	margin-bottom: 1em;
+}
+
+#view-dassel .image-box {
+	height: 100%;
+	width:100%;
+}
+
+#view-dassel .image-box img {
+	display: block;
+	position: absolute;
+	height: 100%;
+	right: 0;
+	max-width: none;
+}
+
+/* Wagner  ---------------------------------------------------------------------------- */
+
+#view-wagner {
+	background-color: #898989;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+#square-wagner .content {
+	text-align: left;
+	color: #FFF;
+	margin-left: 5%;
+	width: 80%;
+	margin-top: 14.8%;
+}
+
+#square-wagner h2 {
+	font-size: 1.75em;
+	margin-bottom: 1.1em;
+	text-transform: uppercase;
+}
+
+#square-wagner .copy-text {
+	color: #FFF;
+	line-height: 1.5em;
+}
+
+#layer-wagner h2 {
+	font-size: 1.75em;
+	margin-bottom: 1.1em;
+	text-transform: uppercase;
+}
+
+#layer-wagner p {
+	margin-bottom: 1em;
+}
+
+#view-wagner .image-box img {
+	height: 100%;
+	max-width: none;
+}
+
+
+/* Twitter  ---------------------------------------------------------------------------- */
+
+#view-twitter {
+	background: #000;
+}
+
+#twitter-text {
+	position: absolute;
+	padding-left: 5%;
+	padding-right: 5%;
+	top: 10%;
+	color:#fff;
+	text-align: right;
+}
+
+#twitter-text h1 {
+	font-size: 2.5em; 
+	letter-spacing: 0;
+	line-height: 1.3em;
+	text-align: left;
+	padding-top: 25.5%;
+	margin-bottom: 2%;
+}
+
+#square-twitter a, a:visited, a:active {
+	color:#fff;
+}
+
+#square-twitter .content {
+	height: 100%;
+}
+
+#square-twitter .image-box {
+	top: 15%;
+	left: 5%;
+	width:18.75%
+}
+
+
+/* Kontakt  ---------------------------------------------------------------------------- */
+
+#square-kontakt p {
+	margin-top: 1.5em;
+}
+
+#square-kontakt h1 {
+	font-family: "Atlas Typewriter Web", sans-serif;
+	font-weight: 900;
+	font-size: 6em;
+	line-height:1em;
+	color: #000;
+	margin-top: 16.8%;
+	margin-bottom: 0.6em;
+}
+
+#square-kontakt .copy-text {
+	
+}
+
+#square-kontakt .content {
+	margin-left: 5%;
+}
+
+#square-kontakt a, a:visited, a:active {
+	color:#000;
+}
+
+/* impressum (Layer)  ---------------------------------------------------------------------------- */
+
+#impressum {
+	background-color: #adadad;
+	z-index: 401;
+	text-align: center;
+	overflow: hidden;
+}
+
+#impressum h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 0 0 1em 0;
+}
+
+#impressum h3, #impressum p {
+	font-size: 0.75em;
+}
+
+#impressum h3 {
+	margin: 1em 0 0 0;
+}
+
+.impressum-cover {	
+	position:absolute;
+	width:100%;
+	height:150%; /* some extra space for buggy ipod */
+	background-color: #adadad;
+	z-index:400;
+	left:0px;
+	top:0px;
+}

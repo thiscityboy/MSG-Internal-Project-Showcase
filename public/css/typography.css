@@ -1,0 +1,137 @@
+/* TYPOGRAPHY
+/* ---------------------------------------------------------------------- */
+
+/* Webfonts */
+
+
+@font-face {
+	font-family: 'Code Light';
+	src: url('/fonts/Code-Light.eot');
+	src: url('/fonts/Code-Light-.eot#iefix') format('embedded-opentype'),
+		 url('/fonts/Code-Light.woff') format('woff'),
+		 url('/fonts/Code-Light.ttf') format('truetype'),
+		 url('/fonts/Code-Light.svg#Code-Light') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Atlas Grotesk Web';
+	src: url('../fonts/Atlas%20Grotesk%20Web-Bold.eot');
+	src: url('../fonts/Atlas%20Grotesk%20Web-Bold-.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/Atlas%20Grotesk%20Web-Bold.woff') format('woff'),
+		 url('../fonts/Atlas%20Grotesk%20Web-Bold.ttf') format('truetype'),
+		 url('../fonts/Atlas%20Grotesk%20Web-Bold.svg#Atlas%20Grotesk%20Web') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Atlas Grotesk Web';
+	src: url('../fonts/Atlas%20Grotesk%20Web-Black.eot');
+	src: url('../fonts/Atlas%20Grotesk%20Web-Black-.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/Atlas%20Grotesk%20Web-Black.woff') format('woff'),
+		 url('../fonts/Atlas%20Grotesk%20Web-Black.ttf') format('truetype'),
+		 url('../fonts/Atlas%20Grotesk%20Web-Black.svg#Atlas%20Grotesk%20Web') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Atlas Typewriter Web';
+	src: url('../fonts/Atlas%20Typewriter%20Web-Regular.eot');
+	src: url('../fonts/Atlas%20Typewriter%20Web-Regular-.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/Atlas%20Typewriter%20Web-Regular.woff') format('woff'),
+		 url('../fonts/Atlas%20Typewriter%20Web-Regular.ttf') format('truetype'),
+		 url('../fonts/Atlas%20Typewriter%20Web-Regular.svg#Atlas%20Typewriter%20Web') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Atlas Typewriter Web';
+	src: url('../fonts/Atlas%20Typewriter%20Web-Black.eot');
+	src: url('../fonts/Atlas%20Typewriter%20Web-Black-.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/Atlas%20Typewriter%20Web-Black.woff') format('woff'),
+		 url('../fonts/Atlas%20Typewriter%20Web-Black.ttf') format('truetype'),
+		 url('../fonts/Atlas%20Typewriter%20Web-Black.svg#Atlas%20Typewriter%20Web') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+/* ---------------------------------------------------------------------- */
+
+body {
+  	font-size:100%;
+	color: #000;	
+	/*text-shadow: 1px 2px 1px #fffff80/1f;*/
+}
+
+h1 {
+	font-family:"Atlas Grotesk Web", sans-serif;
+	font-size: 4em;
+	line-height: 1em; 
+	font-weight: 900;
+}
+
+h2 {
+	font-family:"Atlas Grotesk Web", sans-serif;
+	font-size: 2.5em;
+	line-height: 1.3em; 
+	font-weight: 900;
+}
+
+h3 {
+	font-family: "Atlas Typewriter Web", sans-serif;
+	font-size: 1.3em; 
+	margin-bottom: 0.5em;
+	font-weight: 400;
+}
+
+.copy-text, p, h3 {
+	font-family: "Code-Light", sans-serif;
+	font-size: 1.3333333em; 
+	line-height: 1.5em;
+}
+
+.award-text, .link-button-text {
+	font-family: "Atlas Typewriter Web", sans-serif;
+	font-size: 1em; 
+	line-height: 1.4em;
+}
+
+.typewriter, #footer, .kb-hint {
+	font-family: "Atlas Typewriter Web","Courier New", Courier, monospace;
+	font-size: 0.7em; 
+	letter-spacing: 0.2em;
+}
+
+/* no ios text size adjustment to avoid linebreak. */
+.kb-hint {
+	-webkit-text-size-adjust: 100%;
+}
+
+.logo {
+	font-family: "Atlas Typewriter Web", sans-serif;
+	font-size: 1.5em; 
+	line-height: 1em;
+	font-weight: 900;
+	letter-spacing:0.05em;
+}
+
+.menu-item, .menu-level2-item {
+	font-family: "Atlas Typewriter Web", sans-serif;
+	font-size: 0.9em; 
+	font-weight: 400;	
+}
+
+.menu-touch-item {
+	font-family: "Atlas Typewriter Web", sans-serif;
+	font-size: 12px; 
+	font-weight: 400;		
+}

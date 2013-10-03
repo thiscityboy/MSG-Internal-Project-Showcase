@@ -1,0 +1,630 @@
+/* RESET
+/* ---------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* apply a natural box layout model to all divs  >IE7 */
+div { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+/* SELF-CLEARING FLOATS 
+/* ---------------------------------------------------------------------- */
+.section:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.section {
+	zoom: 1;
+}
+
+/* BASE STYLES 
+/* ---------------------------------------------------------------------- */
+
+html {
+	overflow: hidden;
+}
+
+html, body {
+	height:100%;
+} 
+
+body {
+	background: #000;
+	-webkit-font-smoothing: antialiased; 
+}
+
+img {
+	max-width: 100%;  /* for flexible images (ok for >ie6) */
+	height: auto;
+	-ms-interpolation-mode: bicubic; /* improves rendering quality of sized images, ≥ ie7 */
+}
+
+a, a:visited, a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #666;
+}
+
+.content, img, div
+{
+   user-select: none;
+   -o-user-select:none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+.full-height {
+	height:100%;
+}
+
+h1, h2, h3, h4, li, span, p {
+	cursor:default;
+}
+
+a > span {
+    cursor: hand; 
+	cursor: pointer;
+}
+
+/* Views - common styles
+/* ---------------------------------------------------------------------- */
+
+/* outer wrapper for each content unit.
+   Screen filling background should be aplied to it.
+   The view contains always the square
+*/
+.view {
+	width:100%;
+	position: absolute;
+	left:-1000px;
+	min-height: 100%; 
+	height:auto;
+	z-index: 100;
+	background: #fefefe;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+/* container holding a window filling background for view. Aspect ratio is defined in config.js. */
+.view-background {
+	display:block;
+	position: absolute; /* this is set to 'fixed' by javascript for non touch screens. On touch screens fixed background causes flickering effects */
+	top:0;
+	left:0;
+	max-width: none;	
+}
+
+/* square wich holds the always visible content
+   The square is reside to match browser window dimensions
+   The upper left corner is the 0,0 origin to which image-boxes relate to
+*/
+.square {
+	margin-left: auto;
+	margin-right: auto;
+	width:640px;
+	height:640px;
+	position: relative;
+	padding-top: 1px; /* to avoid collapsing vertical margins, when inner container has top-margin */
+	/*background-color: rgba(0,0,0,0.15);*/
+	/*border: 1px solid #00a; */
+	/*background-image: url("../img/layouts/grid-square.gif");*/
+}
+
+.layer {
+	display: block; 
+	visibility: hidden;
+	position:absolute;
+	background-color: white;
+	/*background-image: url("../img/layouts/grid-square.gif");*/
+}
+
+/* image-boxes are for additional images in- and outside of the square */
+.image-box {
+	position:absolute;
+}
+
+/* content of a square */
+.content {
+	padding-top: 1px; /* important to avoid collapsing vertical margins with parent div */
+	position:relative;
+	top:0;
+	left:0;
+}
+
+.layer .content {
+	padding: 5% 10% 5% 5%;
+	padding-top: 15.5%;
+}
+
+.spinner {
+	position: absolute;
+	top: 57.5%;
+	text-align: center;
+	width: 100%;	
+}
+
+/* general GUI elements
+/* ---------------------------------------------------------------------- */
+
+#splash {
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index:0;
+}
+
+/* reduce height of splash image on small screens */
+@media screen and (max-height:640px) { 
+	#splash img {
+		height:320px;
+	}
+} 
+
+#header {
+	position: fixed;
+	top: 3%;
+	width:100%;
+	padding-left:5%;
+	padding-right:5%;
+	z-index: 500;
+	background-color: rgba(0,0,0,0.15);
+	height:0; /* to avoid catching mouse clicks below menu bar */
+	visibility: hidden;
+}
+
+.logo {
+	float: left;
+}
+
+.logo a, .logo a:visited, .logo a:active, #chapter-title {
+	color:#fff;
+	-webkit-transition: color 1s ease;  
+    -moz-transition: color 1s ease;  
+    -o-transition: color 1s ease;  
+    -ms-transition: color 1s ease;  
+    transition: color 1s ease; 
+}
+
+#logo-small { 
+	display: block;
+	line-height: 1.6em /* to avoid moving umlaute points */	
+} 
+
+#logo-big {
+	display: none;	
+} 
+
+#menu-button {
+	position: absolute;
+	top:0;
+	right: 0;
+	padding-right: 5%;
+	padding-top: 2px;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+.menu-button-bar {
+	width:32px;
+	height:4px;
+	margin-bottom: 6px;
+	background-color: white;
+	-webkit-transition: background-color 1s ease;  
+    -moz-transition: background-color 1s ease;  
+    -o-transition: background-color 1s ease;  
+    -ms-transition: background-color 1s ease;  
+    transition: background-color 1s ease; 
+}
+
+/* set other logo for bigger devices */
+@media screen and (min-width: 700px) and (min-height:660px) { 
+	#logo-small { 
+		display: none;	
+	} 
+	#logo-big {
+		display: block;	
+	} 
+	#menu-button {
+		display:none;
+	}
+} 
+
+#footer {
+	color:#fff;
+	position: fixed;
+	bottom:2%;	
+	left: 5%;
+	display: block;
+	z-index: 900;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* avoids grey bck color on tap */
+	-webkit-transition: color 1s ease;  
+    -moz-transition: color 1s ease;  
+    -o-transition: color 1s ease;  
+    -ms-transition: color 1s ease;  
+    transition: color 1s ease; 
+    cursor: hand; 
+	cursor: pointer;
+	visibility: hidden;
+}
+
+#impressum-link, #language-select, #facebook-link {
+	display: inline-block;
+}
+
+/* animated cross for opening layers
+/* ---------------------------------------------------------------------- */
+
+.animate-1000ms {
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.animate-500ms {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.animate-375ms {
+  -moz-transition: all 0.375s ease-out;
+  -webkit-transition: all 0.375s ease-out;
+  -o-transition: all 0.375s ease-out;
+  transition: all 0.375s ease-out;
+}
+
+.animate-250ms {
+  -moz-transition: all 0.250s;
+  -webkit-transition: all 0.250s;
+  -o-transition: all 0.250s;
+  transition: all 0.250s;
+}
+
+.cross-button {
+    position:absolute;
+    width:64px;
+    height:64px;
+    cursor: hand; 
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* avoids grey bck color on tap */
+	overflow: hidden;
+	z-index:300;
+}
+
+.animation-box {
+	width: 100%;
+	height: 100%;
+	/* avoid flickering */
+	-webkit-backface-visibility: hidden; 
+	-webkit-perspective: 1000;
+}
+
+.cross-h, .cross-v {
+	position: absolute;
+  	background-color: black;
+}
+
+.cross-h {
+	width:100%;
+	height:4px;
+    top:50%;
+	margin-top: -2px;
+}
+
+.cross-v {
+	left: 50%;
+	width: 4px;
+	height:100%;
+    margin-left: -2px;
+}
+
+/* navigation elements
+/* ---------------------------------------------------------------------- */
+
+#move-to-previous-view {
+	width:50px;
+	height:50px;
+	position: fixed;
+	left:22px;
+	top:45%;	
+	display: block;
+	z-index: 700;
+}
+
+#move-to-previous-view:hover {
+	left:24px;
+}
+
+#move-to-previous-view:active {
+	left:18px;
+}
+
+#move-to-next-view {
+	width:50px;
+	height:50px;
+	position: fixed;
+	top:45%;
+	right:22px;
+	display: block;
+	z-index: 700;
+}
+
+#move-to-next-view:hover {
+	right:24px;
+}
+
+#move-to-next-view:active {
+	right:18px;
+}
+
+.move-btn {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%; /* needed for ie8 */
+	cursor: hand; 
+	cursor: pointer;
+}
+
+#btn-next-white {
+	visibility: hidden;
+}
+
+#btn-next-black, #btn-next-white, #btn-back-black, #btn-back-white {
+	display: none;
+}
+
+#menu-status {
+	position: fixed;
+	display: none;
+	width:100%;
+	height:4px;
+	z-index:200;
+}
+
+@media screen and (min-width: 700px) and (min-height:660px) { 
+	#menu-status {
+		display: block;	
+	} 
+} 
+
+.menu-status-bar {
+	display:none;
+	top:0;
+	height: 4px;
+	width: 0px;
+	position:absolute;
+	background-color: #fff;
+	-webkit-transition: background-color 1s ease;  
+    -moz-transition: background-color 1s ease;  
+    -o-transition: background-color 1s ease;  
+    -ms-transition: background-color 1s ease;  
+    transition: background-color 1s ease; 	
+}
+
+/* top menu
+/* ---------------------------------------------------------------------- */
+
+#menu-list { 
+	padding-left: 12%; 
+	text-align: justify; 
+	z-index: 800;
+	display: none;
+	height:16px;
+	overflow:hidden;
+	/* to keep points of german umlaute, see menu.js for differences for MAC vs. WIN */
+	line-height: 1.4em; 
+}
+
+@media screen and (min-width: 700px) and (min-height:660px) { 
+	#menu-list {
+		display: block;	
+	} 
+} 
+		
+#menu li { 
+	display: inline-block; 
+	cursor: hand; 
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* avoids grey bck color on tap */
+}
+
+.menu-item { 
+	color: #fff;
+	cursor: hand; 
+	cursor: pointer;
+	-webkit-transition: color 1s ease;  
+    -moz-transition: color 1s ease;  
+    -o-transition: color 1s ease;  
+    -ms-transition: color 1s ease;  
+    transition: color 1s ease; 	
+}
+
+.menu-triangle {
+	display: inline-block;
+	border-color: #fff transparent transparent transparent ;
+    border-style:solid;
+    border-width:6px;
+    vertical-align: baseline;
+    -webkit-transition: color 1s ease;  
+    -moz-transition: color 1s ease;  
+    -o-transition: color 1s ease;  
+    -ms-transition: color 1s ease;  
+    transition: color 1s ease; 	
+    margin-right: 12px;
+    margin-bottom: -1px;
+}
+
+.menu-level2-triangle {
+	display: inline-block;
+	border-color: transparent transparent transparent #fff  ;
+    border-style:solid;
+    border-width:6px;
+    vertical-align: top;
+    -webkit-transition: color 1s ease;  
+    -moz-transition: color 1s ease;  
+    -o-transition: color 1s ease;  
+    -ms-transition: color 1s ease;  
+    transition: color 1s ease; 	
+}
+
+/* tricky: empty second line to activate the justify effect for navi items */
+.helper-line { 
+	padding-left: 100%; 
+}
+
+.menu-item {
+	float: left;
+	color:#fff;
+	-webkit-transition: color 1s ease;  
+    -moz-transition: color 1s ease;  
+    -o-transition: color 1s ease;  
+    -ms-transition: color 1s ease;  
+    transition: color 1s ease; 	
+}
+
+#menu-level2 {
+	position: absolute;
+	background: black;
+	border-top: 1px solid white;
+	top:44px;
+}
+
+.menu-level2-item {
+	display: block;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	height:64px;
+	border-bottom: 1px solid white;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 25px;
+	background: black;
+	color: white;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+.menu-touch-item {
+	display: block;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	height:32px;
+	border-bottom: 1px solid white;
+	padding-right: 12px;
+	padding-top: 10px;
+	background: black;
+	color: white;
+	cursor: hand; 
+	cursor: pointer;
+	padding-left: 16px;
+	position: relative;
+}
+
+#menu-touch {
+	position: absolute;
+	background: black;
+	border-top: 1px solid white;
+	top:52px;
+	width: 294px;
+	min-height: 60px;
+	z-index:700; 
+	visibility: hidden;
+}
+
+.menu-touch-triangle {
+	display: block;
+	position: absolute;
+	right: 16px;
+	top:9px;
+	border-color: transparent transparent transparent #fff  ;
+    border-style:solid;
+    border-width:6px;
+    -webkit-transition: color 1s ease;  
+    -moz-transition: color 1s ease;  
+    -o-transition: color 1s ease;  
+    -ms-transition: color 1s ease;  
+    transition: color 1s ease; 	
+}
+
+/* sizes for bigger screens */
+@media screen and (min-height: 340px) { 
+	.menu-touch-item {
+		height: 64px;
+		padding-top: 25px;	
+	} 
+	.menu-touch-triangle {
+		top: 25px;
+	}
+}
+	
+.modal-touch {
+	position: absolute;
+	display: block;
+	width:100%;
+	height:100%;
+	z-index:200;
+}
+
+/* debugging
+/* ---------------------------------------------------------------------- */
+
+#touch-console {
+	position: fixed;
+	width:100%;
+	top:20%;
+	height:60%;
+	z-index: 9999;
+	padding:5px;
+	background-color: rgba(000,200,200,0.90);
+	font-family:"Courier New", Courier, monospace;
+	font-size: 1em; 
+	display: none;
+	overflow: hidden;
+}
+
+/* helper layer for layout positioning */
+.layout {
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: 0.5;	
+	display: none;
+}
+
