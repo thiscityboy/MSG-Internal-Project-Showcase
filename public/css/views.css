@@ -26,6 +26,22 @@
 	right: 20px;
 }
 
+
+ul.awards {
+	display: block;
+	width: 100%;
+}
+
+ul.awards li {
+	float: left;
+	width: 31%;
+	padding: 1%;
+   -webkit-filter: grayscale(100%);  
+
+}
+
+
+
 /* Projekte  ---------------------------------------------------------------------------- */
 
 /* styles for all projects (css classes) */
@@ -135,8 +151,8 @@
 /* faznet */
 
 #view-projekte-faznet {
-	background-color: #d8d8d8;
-	color: #000;
+	background-color: #DEECEC;
+	color: #084B97;
 }
 
 #square-projekte-faznet .content {
@@ -166,7 +182,7 @@
 }
 
 #square-projekte-nfl .image-box {
-	top: 40%;
+	top: 20%;
 	left: -40%;
 	width: 175%;
 }
@@ -187,15 +203,15 @@
 }
 
 #square-projekte-cmt-iphone .image-box {
-	top: 45%;
-	left: -40%;
-	width: 170%;
+	top: 47%;
+	left: -30%;
+	width: 162%;
 } 
 
 /* faz-ipad */
 
 #view-projekte-faz-ipad {
-	background-color: #898989;
+	background-color: #1CBB20;
 	color: #fff;
 }
 
@@ -203,9 +219,9 @@
 	margin-top: 15%;
 }
 #square-projekte-faz-ipad .image-box {
-	top: 35%;
-	left: -5%;
-	width: 110.625%;
+	top: 47%;
+	left: -30%;
+	width: 162%;
 }
 
 /* sauza */
@@ -489,7 +505,15 @@
 
 #square-kontakt .content {
 	margin-left: 5%;
+
 }
+
+#square-kontakt .content {
+	margin-left: 5%;
+
+}
+
+
 
 #square-kontakt a, a:visited, a:active {
 	color:#000;

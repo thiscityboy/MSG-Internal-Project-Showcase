@@ -144,7 +144,7 @@ a > span {
 	display: block; 
 	visibility: hidden;
 	position:absolute;
-	background-color: rgba(255,255,255,.9);
+	background-color: rgba(255,255,255,1);
 	/*background-image: url("../img/layouts/grid-square.gif");*/
 }
 

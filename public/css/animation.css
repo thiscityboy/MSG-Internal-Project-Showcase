@@ -1,21 +1,21 @@
-.home-bg {
-	animation: home-bg 5s linear;
-	-webkit-animation: home-bg x;
+img#home-bg {
+	animation: home-bg 25s linear;
+	-webkit-animation: home 25s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+
 }
 
-@-webkit-keyframes home-bg /* Safari and Chrome */
-{
-	from {transform: scale(1,1);}
-	to {transform: scale(1.5,1.5);}
+@-webkit-keyframes home {
+	from {
+		transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+	}
+	to {
+		transform: scale(1.25,1.25);
+		-webkit-transform: scale(1.25,1.25);
+	}
 }
 
 
 
-#home-type-anime {
-    -webkit-animation-duration: 4s;
-    -moz-animation-duration: 4s;
-    animation-duration: 4s;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
-}
