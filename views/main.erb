@@ -1,4 +1,27 @@
+<style>
+#mdn {
+	width: 100%;
+	height: 50px;
+	border-radius: 0;
+	font-size: 1em;
+	font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
 
+}
+
+button {
+	width: 90%;
+	height: 50px;
+	border-radius: 0;
+	background-color: red;
+	font-size: 1em;
+	margin: 10px auto;
+	font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	border: solid 0px;
+}
+
+</style>
 
 <!-- 	<div id="splash"><img src="/img/dw/splash.png" alt="wait..."/></div>	
  -->	
@@ -226,6 +249,16 @@
 		<div class="square" id="square-kontakt">
 						
 			<div class="content">
+
+				<h2>To find out what Vibe's and MSG can do for you, enter your mobile number below.</h2>
+				<div style="height:20px"></div>
+				
+				<form method="post" action="/form/process" class="contact-form" id="offer-form">
+					<input type="tel" placeholder="&nbsp;&nbsp;Mobile Number" id="mdn" name="mdn">
+					<button type="submit">SUBMIT</button>
+				</form>
+				
+				<h2>Contact</h2>
 				<p>
 					300 West Adams St.<br>
 					7th Floor<br>
@@ -246,6 +279,4 @@
 			
 		</div>
 	</div>
-
-
 

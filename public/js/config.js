@@ -17,6 +17,11 @@
 // define 'namespace' DW
 var DW = DW || {};
 
+// language 
+DW.LANGUAGE = "de"; // default
+if (location.href.indexOf("/en/") >= 0) {
+	DW.LANGUAGE = "en";
+}
 
 // size of central always visible content square
 DW.SQUARE_SIZE = 640;
@@ -45,13 +50,7 @@ DW.MENU_TOUCH_MINWIDTH = 160;
 // Minimal width of second menu level, to avoid line breaks
 DW.MENU_LEVEL2_MINWIDTH = 210;
 
-// images which are preloaded for later use (see util)
-DW.PRELOAD_IMAGES = [
-	"../img/dw/social_twitter_on.png",
-	"../img/dw/social_xing_on.png",
-	"../img/dw/social_linkedin_on.png",
-	"../img/dw/btn_menu_black.gif"
-];
+
 
 // sitemap
 DW.MENU = [

@@ -76,11 +76,7 @@ a:hover {
 
 .content, img, div
 {
-   user-select: none;
-   -o-user-select:none;
-   -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
+
 }
 
 .full-height {
@@ -603,29 +599,5 @@ a > span {
 	z-index:200;
 }
 
-/* debugging
-/* ---------------------------------------------------------------------- */
 
-#touch-console {
-	position: fixed;
-	width:100%;
-	top:20%;
-	height:60%;
-	z-index: 9999;
-	padding:5px;
-	background-color: rgba(000,200,200,0.90);
-	font-family:"Courier New", Courier, monospace;
-	font-size: 1em; 
-	display: none;
-	overflow: hidden;
-}
-
-/* helper layer for layout positioning */
-.layout {
-	position:absolute;
-	top:0;
-	left:0;
-	opacity: 0.5;	
-	display: none;
-}
 

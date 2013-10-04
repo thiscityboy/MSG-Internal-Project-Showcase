@@ -172,8 +172,7 @@ ul.awards li {
 /* faznet */
 
 #view-projekte-nfl {
-	background-image: url(/img/views/nfl-bg2.jpg);
-	background-size: cover;
+	background: #393939;
 	color: #fff;
 }
 
