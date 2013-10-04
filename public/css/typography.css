@@ -31,7 +31,6 @@
 /* ---------------------------------------------------------------------- */
 
 body {
-  	font-size:100%;
 	color: #000;	
 	/*text-shadow: 1px 2px 1px #fffff80/1f;*/
 }
@@ -40,7 +39,8 @@ h1 {
 	font-family:"Helvetica-Neue", sans-serif;
 	font-size: 4em;
 	line-height: 1em; 
-	font-weight: 900;
+	font-weight: 300;
+	opacity: .8;
 }
 
 h2 {
@@ -48,19 +48,30 @@ h2 {
 	font-size: 2.5em;
 	line-height: 1.3em; 
 	font-weight: 300;
+	opacity: .8;
+
 }
 
 h3 {
 	font-family:"Helvetica-Neue", sans-serif;
 	font-size: 1.3em; 
 	margin-bottom: 0.5em;
-	font-weight: 600;
+	font-weight: 300;
+	opacity: .8;
 
 }
 
 .copy-text, p, h3 {
 	font-family: "Helvetica-Neue", sans-serif;
-	font-size: 1.5; 
+	font-size: 1.5em; 
+	line-height: 1.5em;
+	margin-top: -30px;
+	opacity: .8;
+
+}
+
+p.inner-box-copy  {
+	font-size: 1.2em;
 	line-height: 1.5em;
 }
 

@@ -159,8 +159,8 @@ ul.awards li {
 /* faznet */
 
 #view-projekte-faznet {
-	background-color: #DEECEC;
-	color: #084B97;
+	background-color: #003E79;
+	color: #fff;
 }
 
 #square-projekte-faznet .content {
@@ -170,7 +170,7 @@ ul.awards li {
 #square-projekte-faznet .image-box {
 	top: 40%;
 	left: -40%;
-	width: 175%;
+	width: 165%;
 }
 
 #layer-projekte-faznet {
@@ -180,7 +180,7 @@ ul.awards li {
 /* faznet */
 
 #view-projekte-nfl {
-	background: #393939;
+	background: #1B1B1B;
 	color: #fff;
 }
 
@@ -189,9 +189,9 @@ ul.awards li {
 }
 
 #square-projekte-nfl .image-box {
-	top: 20%;
-	left: -40%;
-	width: 175%;
+	top: 3%;
+	left: -30%;
+	width: 170%;
 }
 
 #layer-projekte-nfl {
@@ -210,7 +210,7 @@ ul.awards li {
 }
 
 #square-projekte-cmt-iphone .image-box {
-	top: 47%;
+	top: 45%;
 	left: -30%;
 	width: 162%;
 } 
@@ -457,7 +457,7 @@ ul.awards li {
 	background-image: url(/img/views/twitter-bird.png);
 	background-repeat: no-repeat;
 	opacity: 1;
-	background-size: 200px 200px;
+	background-size: 150px 150px;
 	background-position: 10% 10%;
 	background-color: black;
 }

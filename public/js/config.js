@@ -55,12 +55,12 @@ DW.MENU_LEVEL2_MINWIDTH = 210;
 // sitemap
 DW.MENU = [
 	{'level':1 ,'labelDe':'START', 'labelEn':'START', 'view':'home'},
-	{'level':1 ,'labelDe':'WORK', 'labelEn':'WORK', 'view':'projekte-0'},
-	{'level':2 ,'labelDe':'U.S. Cellular OKC Thunder', 'labelEn':'U.S. Cellular OKC Thunder', 'view':'projekte-faznet'},
-	{'level':2 ,'labelDe':'Verizon NFL Huddle Site', 'labelEn':'Verizon NFL Huddle Site', 'view':'projekte-nfl'},
-	{'level':2 ,'labelDe':'Verizon CMT Music Awards Mobile Site', 'labelEn':'Verizon CMT Music Awards Mobile Site', 'view':'projekte-faz-iphone'},
-	{'level':2 ,'labelDe':'F.A.Z. IPAD-APP', 'labelEn':'F.A.Z. IPAD-APP', 'view':'projekte-faz-ipad'},
-	{'level':2 ,'labelDe':'Sauza "Make It With A Lifeguard', 'labelEn':'Sauza "Make It With A Lifeguard', 'view':'projekte-christophorus'},
-	{'level':2 ,'labelDe':'Indy Car Mobile Site', 'labelEn':'Indy Car Mobile Site', 'view':'projekte-konzeptlicht'},
+	{'level':1 ,'labelDe':'WORK', 'labelEn':'WORK', 'view':'projekte-faznet'},
+	// {'level':2 ,'labelDe':'U.S. Cellular OKC Thunder', 'labelEn':'U.S. Cellular OKC Thunder', 'view':'projekte-faznet'},
+	// {'level':2 ,'labelDe':'Verizon NFL Huddle Site', 'labelEn':'Verizon NFL Huddle Site', 'view':'projekte-nfl'},
+	// {'level':2 ,'labelDe':'Verizon CMT Music Awards Mobile Site', 'labelEn':'Verizon CMT Music Awards Mobile Site', 'view':'projekte-faz-iphone'},
+	// {'level':2 ,'labelDe':'F.A.Z. IPAD-APP', 'labelEn':'F.A.Z. IPAD-APP', 'view':'projekte-faz-ipad'},
+	// {'level':2 ,'labelDe':'Sauza "Make It With A Lifeguard', 'labelEn':'Sauza "Make It With A Lifeguard', 'view':'projekte-christophorus'},
+	// {'level':2 ,'labelDe':'Indy Car Mobile Site', 'labelEn':'Indy Car Mobile Site', 'view':'projekte-konzeptlicht'},
 	{'level':1 ,'labelDe':'CONTACT', 'labelEn':'CONTACT', 'view':'kontakt'}
 ];
