@@ -1,3 +1,11 @@
+/* Twitter Widget */
+
+#twitter-widget {
+	width: 100%;
+	position: absolute;
+	top: 25%;
+	left: 60;
+}
 
 /* Home ---------------------------------------------------------------------------- */
 
@@ -446,7 +454,12 @@ ul.awards li {
 /* Twitter  ---------------------------------------------------------------------------- */
 
 #view-twitter {
-	background: #000;
+	background-image: url(/img/views/twitter-bird.png);
+	background-repeat: no-repeat;
+	opacity: 1;
+	background-size: 200px 200px;
+	background-position: 10% 10%;
+	background-color: black;
 }
 
 #twitter-text {
